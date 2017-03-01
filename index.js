@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var localServer = function () {
+var startServer = function (argv, k_cli, cli, env) {
     'use strict';
     var colors     = require('colors'),
         os         = require('os'),
@@ -178,4 +178,4 @@ var localServer = function () {
     });
 }
 
-module.exports = localServer;
+exports.run = startServer;
